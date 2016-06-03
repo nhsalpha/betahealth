@@ -1,0 +1,16 @@
+.callout {
+  padding: ($baseline-grid-unit * 4) 0;
+
+  @include media(tablet) {
+    padding: ($baseline-grid-unit * 8) 0;
+  }
+}
+
+.callout__111 {
+  background-color: $light-blue;
+  color: $white;
+
+  .callout--inner {
+    @extend %content-block;
+  }
+}
