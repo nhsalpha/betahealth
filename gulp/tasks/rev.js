@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const gulpIgnore = require('gulp-ignore');
+const print = require('gulp-print');
 const RevAll = require('gulp-rev-all');
 
 const paths = require('../paths');
@@ -16,9 +17,9 @@ gulp.task('rev', () => {
     return gulp;
   }
 
-  return gulp.src(`${paths.output}/**`)
+  return gulp.src(`${paths.output}/**/*.*`)
     .pipe(gulpIgnore.exclude('*.map'))
-    .pipe(gulpIgnore.exclude(/^(.*)\.([a-f0-9]{32})\.(.*)+$/ig))
+    .pipe(print())
     .pipe(revAll.revision())
     .pipe(gulp.dest(paths.build))
     .pipe(revAll.manifestFile())

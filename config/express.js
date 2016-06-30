@@ -66,6 +66,7 @@ module.exports = (app, config) => {
           '\'self\'',
           'www.google-analytics.com',
           'statse.webtrendslive.com',
+          'hm.webtrends.com',
         ],
         fontSrc: [
           (config.staticCdn ? config.staticCdn.replace('//', '') : null),

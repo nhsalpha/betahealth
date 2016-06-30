@@ -49,4 +49,4 @@ FeedbackForm.prototype.isSubmitted = function hasErrors() {
   return this.$formContainer.hasClass('is-submitted');
 };
 
-module.exports = new FeedbackForm;
+module.exports = new FeedbackForm();
