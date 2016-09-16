@@ -1,0 +1,10 @@
+{
+  "layout": "content-sidebar-first",
+  "title": "Rashes in babies and children",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/skin-rash-children/pages/introduction.aspx",
+  "localTitle": "Rashes in babies and children",
+  "localHeader": "!file=local-header.md",
+  "mainContent": "!file=main-content.md",
+  "sidebarContent": "!file=sidebar-content.md"
+}

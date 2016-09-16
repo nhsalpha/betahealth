@@ -1,6 +1,6 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
-{% block main_content %}
+{% block page_content %}
   <p>
     This is where NHS.UK tests new pages and services to get feedback. Please
     take a look and tell us what you think. It will help us to improve what we do.

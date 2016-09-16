@@ -55,6 +55,24 @@ md.use(markdownItContainer, 'alert', {
     return '</section>\n';
   },
 });
+md.use(markdownItContainer, 'article', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<article class="section-unit">\n';
+    }
+    return '</article>\n';
+  },
+});
+md.use(markdownItContainer, 'section', {
+  marker: ':',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section>\n';
+    }
+    return '</section>\n';
+  },
+});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);

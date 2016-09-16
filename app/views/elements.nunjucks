@@ -1,6 +1,6 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
-{% block main_content %}
+{% block page_content %}
   <h1>Heading one</h1>
   <h2>Heading two</h2>
   <h3>Heading three</h3>

@@ -1,0 +1,5 @@
+{% macro render(content) %}
+{% markdown %}
+  {{ content | safe }}
+{% endmarkdown%}
+{% endmacro %}

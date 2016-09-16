@@ -1,0 +1,47 @@
+{
+  "layout": "content-simple",
+  "title": "Warts and verrucas",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/warts/pages/introduction.aspx",
+  "localTitle": "Warts and verrucas",
+  "mainContentBefore": "!file=main-content-before.md",
+  "mainContent": "!file=main-content.md",
+  "cards": [
+    {
+      "srcset": [
+        "assets/images/warts/standard-wart-300.jpg 300w",
+        "assets/images/warts/standard-wart-600.jpg 600w"
+      ],
+      "caption": "Warts feel firm and rough. They can appear on palms, knuckles, knees and fingers.",
+      "analytics": "DCSext.WartsImages,Firm",
+      "alt": "A wart"
+    },
+    {
+      "srcset": [
+        "assets/images/warts/verruca-300.jpg 300w",
+        "assets/images/warts/verruca-600.jpg 600w"
+      ],
+      "caption": "Warts on your feet are called verrucas. They have tiny black dots under the hard skin and can be painful - like standing on a needle.",
+      "analytics": "DCSext.WartsImages,Verrucas",
+      "alt": "A verruca"
+    },
+    {
+      "srcset": [
+        "assets/images/warts/plane-warts-300.jpg 300w",
+        "assets/images/warts/plane-warts-600.jpg 600w"
+      ],
+      "caption": "Some warts are round, flat and can be yellow (plane warts). You can have many of them.",
+      "analytics": "DCSext.WartsImages,Round",
+      "alt": "A plane wart"
+    },
+    {
+      "srcset": [
+        "assets/images/warts/cluster-300.jpg 300w",
+        "assets/images/warts/cluster-600.jpg 600w"
+      ],
+      "caption": "Clusters of warts, spread over an area of skin (mosaic warts) are common on feet and hands.",
+      "analytics": "DCSext.WartsImages,Clusters",
+      "alt": "A cluster of warts"
+    }
+  ]
+}
