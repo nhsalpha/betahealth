@@ -1,16 +1,12 @@
 {% extends '_layouts/content.nunjucks' %}
-{% import '_macros/markdown.nunjucks' as md %}
+{% import '_macros/components.nunjucks' as components %}
 
 {% block main_content %}
-  <div class="page-section">
-    <div class="reading-width">
-
-      {% if mainContent %}
-        {{ md.render(mainContent) }}
-      {% else %}
-        {% block page_content %}{% endblock %}
-      {% endif %}
-
-    </div>
-  </div>
+  {% if main %}
+    {% for component in main %}
+      {{ components[component.type](component.content) }}
+    {% endfor %}
+  {% else %}
+    {% block page_content %}{% endblock %}
+  {% endif %}
 {% endblock %}

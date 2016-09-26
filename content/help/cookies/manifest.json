@@ -1,0 +1,10 @@
+{
+  "layout": "content-simple",
+  "title": "Cookies",
+  "main": [
+    {
+      "type": "content_block",
+      "content": "!file=main-content.md"
+    }
+  ]
+}

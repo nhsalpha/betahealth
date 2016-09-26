@@ -1,5 +1,5 @@
 {% extends '_layouts/content.nunjucks' %}
-{% import '_macros/markdown.nunjucks' as md %}
+{% import '_macros/components.nunjucks' as components %}
 
 {% block main_content %}
   <div class="page-section">
@@ -7,13 +7,17 @@
 
       <div class="column__two-thirds">
         <div class="reading-width">
-          {{ md.render(mainContent) }}
+          {% for component in main %}
+            {{ components[component.type](component.content) }}
+          {% endfor %}
         </div>
       </div>
 
       <div class="column__one-third-right">
         <div class="reading-width">
-          {{ md.render(sidebarContent) }}
+          {% for component in sidebar %}
+            {{ components[component.type](component.content) }}
+          {% endfor %}
         </div>
       </div>
 

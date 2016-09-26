@@ -3,8 +3,17 @@
   "title": "Stomach ache",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx",
-  "localTitle": "Stomach ache",
   "localHeader": "Most stomach aches aren’t anything serious and will go away after a few days.",
-  "mainContent": "!file=main-content.md",
-  "sidebarContent": "!file=sidebar-content.md"
+  "main": [
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "content": "!file=sidebar-content.md"
+    }
+  ]
 }

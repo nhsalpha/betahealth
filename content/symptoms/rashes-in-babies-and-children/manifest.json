@@ -3,8 +3,305 @@
   "title": "Rashes in babies and children",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/skin-rash-children/pages/introduction.aspx",
-  "localTitle": "Rashes in babies and children",
   "localHeader": "!file=local-header.md",
-  "mainContent": "!file=main-content.md",
-  "sidebarContent": "!file=sidebar-content.md"
+  "main": [
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    },
+    {
+      "type": "section_list",
+      "content": {
+        "title": "Rash with fever",
+        "sections": [
+          {
+            "title": "Fever and red cheeks",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-1280.jpg 1280w"
+                  ],
+                  "alt": "A child’s face showing a bright red rash on both cheeks",
+                  "analytics": "DCSext.RashesChildrenImages,FeverRedCheeks"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-1-1.md"
+              }
+            ]
+          },
+          {
+            "title": "Small spots and blisters",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/chicken-pox-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/chicken-pox-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/chicken-pox-1280.jpg 1280w"
+                  ],
+                  "alt": "A baby covered in small spots",
+                  "analytics": "DCSext.RashesChildrenImages,SmallSpotsBlisters"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-1-2.md"
+              }
+            ]
+          },
+          {
+            "title": "Blisters on hands and feet and in the mouth",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-1280.jpg 1280w"
+                  ],
+                  "alt": "Blisters on the small finger on a hand",
+                  "analytics": "DCSext.RashesChildrenImages,BlistersOnHands"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-1-3.md"
+              }
+            ]
+          },
+          {
+            "title": "Pink-red rash",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/scarlet-fever-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/scarlet-fever-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/scarlet-fever-1280.jpg 1280w"
+                  ],
+                  "alt": "A child’s chest and shoulders covered in a pink-red rash",
+                  "analytics": "DCSext.RashesChildrenImages,PinkRedRash"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-1-4.md"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "section_list",
+      "content": {
+        "title": "Rash with itching",
+        "sections": [
+          {
+            "title": "Rash caused by heat",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/heat-rash-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/heat-rash-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/heat-rash-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/heat-rash-1280.jpg 1280w"
+                  ],
+                  "alt": "A child’s back showing a heat rash under a pulled up t-shirt",
+                  "analytics": "DCSext.RashesChildrenImages,RashesHeat"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-2-1.md"
+              }
+            ]
+          },
+          {
+            "title": "Red scaly skin or cracked skin",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/eczma-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/eczma-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/eczma-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/eczma-1280.jpg 1280w"
+                  ],
+                  "alt": "Back of a child’s knees showing red, cracked skin",
+                  "analytics": "DCSext.RashesChildrenImages,ScalyCrackedSkin"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-2-2.md"
+              }
+            ]
+          },
+          {
+            "title": "Raised itchy spots",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/hives-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/hives-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/hives-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/hives-1280.jpg 1280w"
+                  ],
+                  "alt": "Side of a child’s knee showing hives",
+                  "analytics": "DCSext.RashesChildrenImages,RaisedItchySpots"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-2-3.md"
+              }
+            ]
+          },
+          {
+            "title": "Itchy, round rash",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/ringworm-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/ringworm-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/ringworm-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/ringworm-1280.jpg 1280w"
+                  ],
+                  "alt": "Ringworm rash on skin",
+                  "analytics": "DCSext.RashesChildrenImages,ItchyRoundRash"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-2-4.md"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "section_list",
+      "content": {
+        "title": "Rash without fever or itching",
+        "sections": [
+          {
+            "title": "White spots in babies",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/milia-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/milia-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/milia-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/milia-1280.jpg 1280w"
+                  ],
+                  "alt": "Close-up of a baby’s nose showing small white spots",
+                  "analytics": "DCSext.RashesChildrenImages,WhiteSpotsBabies"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-3-1.md"
+              }
+            ]
+          },
+          {
+            "title": "Red, yellow and white spots in babies",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/erythema-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/erythema-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/erythema-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/erythema-1280.jpg 1280w"
+                  ],
+                  "alt": "Baby’s head and shoulders showing raised spots",
+                  "analytics": "DCSext.RashesChildrenImages,RedYellowWhiteSpots"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-3-2.md"
+              }
+            ]
+          },
+          {
+            "title": "Pink or skin-coloured spots",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/molluscum-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/molluscum-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/molluscum-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/molluscum-1280.jpg 1280w"
+                  ],
+                  "alt": "Small, pink raised spots on skin",
+                  "analytics": "DCSext.RashesChildrenImages,PinkSkinColoured"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-3-3.md"
+              }
+            ]
+          },
+          {
+            "title": "Red patches on a baby’s bottom",
+            "content": [
+              {
+                "type": "image",
+                "content": {
+                  "srcset": [
+                    "assets/images/rashes-in-babies-and-children/nappy-400.jpg 400w",
+                    "assets/images/rashes-in-babies-and-children/nappy-640.jpg 640w",
+                    "assets/images/rashes-in-babies-and-children/nappy-800.jpg 800w",
+                    "assets/images/rashes-in-babies-and-children/nappy-1280.jpg 1280w"
+                  ],
+                  "alt": "Red patch on a baby’s bottom",
+                  "analytics": "DCSext.RashesChildrenImages,RedPatches"
+                }
+              },
+              {
+                "type": "markdown",
+                "content": "!file=section-3-4.md"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "content": "!file=sidebar-content.md"
+    }
+  ]
 }

@@ -4,36 +4,45 @@
   "title": "Fungal nail infection",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/fungal-nail-infection/pages/introduction.aspx",
-  "localTitle": "Fungal nail infection",
   "localHeader": "Fungal nail infections are common. They’re not serious but they can take a long time to treat.",
-  "mainContent": "!file=main-content.md",
-  "cards": [
+  "before": [
     {
-      "srcset": [
-        "assets/images/fungal-nail-infection/stage-1-300.jpg 300w",
-        "assets/images/fungal-nail-infection/stage-1-600.jpg 600w"
-      ],
-      "caption": "Fungal nail infections usually start at the edge of the nail.",
-      "analytics": "DCSext.FungalNailImages,Edge",
-      "alt": "Fungal infection at the edge of the nail"
-    },
+      "type": "figure_list",
+      "content": [
+        {
+          "srcset": [
+            "assets/images/fungal-nail-infection/stage-1-300.jpg 300w",
+            "assets/images/fungal-nail-infection/stage-1-600.jpg 600w"
+          ],
+          "caption": "Fungal nail infections usually start at the edge of the nail.",
+          "analytics": "DCSext.FungalNailImages,Edge",
+          "alt": "Fungal infection at the edge of the nail"
+        },
+        {
+          "srcset": [
+            "assets/images/fungal-nail-infection/stage-2-300.jpg 300w",
+            "assets/images/fungal-nail-infection/stage-2-600.jpg 600w"
+          ],
+          "caption": "They often then spread to the middle. The nail becomes discoloured and lifts off.",
+          "analytics": "DCSext.FungalNailImages,Spread",
+          "alt": "Infection spread to the middle of the toe"
+        },
+        {
+          "srcset": [
+            "assets/images/fungal-nail-infection/stage-3-300.jpg 300w",
+            "assets/images/fungal-nail-infection/stage-3-600.jpg 600w"
+          ],
+          "caption": "The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.",
+          "analytics": "DCSext.FungalNailImages,Brittle",
+          "alt": "Brittle nail with pieces missing"
+        }
+      ]
+    }
+  ],
+  "main": [
     {
-      "srcset": [
-        "assets/images/fungal-nail-infection/stage-2-300.jpg 300w",
-        "assets/images/fungal-nail-infection/stage-2-600.jpg 600w"
-      ],
-      "caption": "They often then spread to the middle. The nail becomes discoloured and lifts off.",
-      "analytics": "DCSext.FungalNailImages,Spread",
-      "alt": "Infection spread to the middle of the toe"
-    },
-    {
-      "srcset": [
-        "assets/images/fungal-nail-infection/stage-3-300.jpg 300w",
-        "assets/images/fungal-nail-infection/stage-3-600.jpg 600w"
-      ],
-      "caption": "The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.",
-      "analytics": "DCSext.FungalNailImages,Brittle",
-      "alt": "Brittle nail with pieces missing"
+      "type": "content_block",
+      "content": "!file=main-content.md"
     }
   ]
 }

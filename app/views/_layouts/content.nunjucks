@@ -1,6 +1,5 @@
 {% extends '_layouts/nhsuk.nunjucks' %}
-{% import '_macros/images.nunjucks' as images %}
-{% import '_macros/markdown.nunjucks' as md %}
+{% import '_macros/components.nunjucks' as components %}
 
 {% block content %}
   <article role="article">
@@ -9,7 +8,7 @@
         <h1 class="local-header--title">{{ title }}</h1>
         <div class="local-header--intro">
           {% if localHeader %}
-            {{ md.render(localHeader) }}
+            {{ components.markdown(localHeader) }}
           {% else %}
             {% block local_header %}{% endblock %}
           {% endif %}
@@ -17,30 +16,12 @@
       </div>
     </div>
 
-    {% if mainContentBefore %}
-      <div class="page-section">
-        {{ md.render(mainContentBefore) }}
-      </div>
+    {% if before %}
+      {% for component in before %}
+        {{ components[component.type](component.content) }}
+      {% endfor %}
     {% else %}
       {% block main_content_before %}{% endblock %}
-    {% endif %}
-
-    {% if cards %}
-      <div class="page-section page-section__collapse-bottom">
-        {% for card in cards %}
-          <figure class="card">
-            {{ images.image(
-              srcset=card.srcset,
-              alt=card.alt,
-              analytics=card.analytics
-            ) }}
-
-            <figcaption class="card--caption">
-              {{ md.render(card.caption) }}
-            </figcaption>
-          </figure>
-        {% endfor %}
-      </div>
     {% endif %}
 
     {% block main_content %}{% endblock %}

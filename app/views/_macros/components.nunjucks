@@ -1,0 +1,75 @@
+{% macro image(image) %}
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="
+      {% for src in image.srcset %}
+        {% set splitSrc = src | split(' ') %}
+        {% set path = asset_path(splitSrc[0]) %}
+        {% set width = splitSrc[1] %}
+
+        {% if loop.last %}
+          {{ path }} {{ width }}
+        {% else %}
+          {{ path }} {{ width }},
+        {% endif %}
+      {% endfor %}
+    "
+    alt="{{ image.alt }}"
+    {% if analytics %}
+      data-analytics="{{ image.analytics }}"
+    {% endif %}
+    />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    {% set fallback = image.srcset[0] | split(' ') %}
+    <img src="{{ asset_path(fallback[0]) }}" alt="{{ image.alt }}" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+{% endmacro %}
+
+{% macro markdown(content) %}
+{% markdown %}
+  {{ content | safe }}
+{% endmarkdown%}
+{% endmacro %}
+
+{% macro content_block(content) %}
+  <div class="page-section">
+    <div class="reading-width">
+      {{ markdown(content) }}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro figure_list(list) %}
+  <div class="page-section page-section__collapse-bottom">
+    {% for card in list %}
+      <figure class="card">
+        {{ image({
+          srcset: card.srcset,
+          alt: card.alt,
+          analytics: card.analytics
+        }) }}
+
+        <figcaption class="card--caption">
+          {{ markdown(card.caption) }}
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro section_list(content) %}
+  <section>
+    <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
+
+    {% for section in content.sections %}
+      <article class="section-unit">
+        <h3>{{ section.title }}</h3>
+
+        {% for component in section.content %}
+          {{ loadComponent(component.type)(component.content) }}
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </section>
+{% endmacro %}

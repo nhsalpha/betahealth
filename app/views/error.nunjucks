@@ -1,7 +1,11 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
-{% block page_content %}
-  <h1>{{ message }}</h1>
-  <h2>{{ error.status }}</h2>
-  <pre>{{ error.stack }}</pre>
+{% block main_content %}
+  <div class="page-section">
+    <div class="reading-width">
+      <h1>{{ message }}</h1>
+      <h2>{{ error.status }}</h2>
+      <pre>{{ error.stack }}</pre>
+    </div>
+  </div>
 {% endblock %}
