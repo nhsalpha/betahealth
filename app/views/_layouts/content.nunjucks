@@ -1,0 +1,35 @@
+{% extends '_layouts/nhsuk.nunjucks' %}
+{% import '_macros/components.nunjucks' as components %}
+
+{% block content %}
+  <article role="article">
+    <div class="local-header">
+      <div class="local-header--inner">
+        <h1 class="local-header--title">{{ title }}</h1>
+        <div class="local-header--intro">
+          {% if localHeader %}
+            {{ components.markdown(localHeader) }}
+          {% else %}
+            {% block local_header %}{% endblock %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if before %}
+      {% for component in before %}
+        {{ components[component.type](component.content) }}
+      {% endfor %}
+    {% else %}
+      {% block main_content_before %}{% endblock %}
+    {% endif %}
+
+    {% block main_content %}{% endblock %}
+
+    {% block main_content_after %}{% endblock %}
+
+    {% if nonEmergencyCallout %}
+      {% include '_includes/non-emergency-callout.nunjucks' %}
+    {% endif %}
+  </article>
+{% endblock %}

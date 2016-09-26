@@ -17,6 +17,7 @@ const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
+const changeCase = require('change-case');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -55,6 +56,24 @@ md.use(markdownItContainer, 'alert', {
     return '</section>\n';
   },
 });
+md.use(markdownItContainer, 'article', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<article class="section-unit">\n';
+    }
+    return '</article>\n';
+  },
+});
+md.use(markdownItContainer, 'section', {
+  marker: ':',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section>\n';
+    }
+    return '</section>\n';
+  },
+});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
@@ -66,6 +85,12 @@ module.exports = (app, config) => {
   });
   nunjucksEnv.addFilter('split', (str, seperator) => {
     return str.split(seperator);
+  });
+  nunjucksEnv.addFilter('kebabcase', (str) => {
+    return changeCase.paramCase(str);
+  });
+  nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
+    return (name) ? this.ctx[name] : this.ctx;
   });
 
   markdown.register(nunjucksEnv, (body) => {
@@ -88,7 +113,7 @@ module.exports = (app, config) => {
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
-  app.use(assetPath(config));
+  app.use(assetPath(config, nunjucksEnv));
   app.use(feedback());
 
   app.use(csrf({

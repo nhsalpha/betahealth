@@ -1,6 +1,6 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
-{% block main_content %}
+{% block page_content %}
   <p>We have a GP in the NHS.UK Beta team who reads and approves all content before
   it’s published.</p>
 

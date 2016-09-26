@@ -11,23 +11,41 @@ try {
     in production after revisioning assets.`);
 }
 
-module.exports = (config) => {
-  return function locals(req, res, next) {
-    res.locals.asset_path = (filename) => {
-      let assetRoot = '/';
+function isLocalPath(path) {
+  let local = true;
 
-      if (config.staticCdn) {
-        assetRoot = config.staticCdn;
-      } else if (config.env === 'production') {
-        assetRoot = `${(req.isHttps ? 'https' : req.protocol)}://${req.get('host')}/`;
-      }
+  if (path.indexOf('://') !== -1) {
+    local = false;
+  }
 
-      if (manifestFile[filename]) {
-        filename = manifestFile[filename];
+  if (path.indexOf('/') === 0) {
+    local = false;
+  }
+
+  return local;
+}
+
+module.exports = (config, env) => {
+  return function assetPath(req, res, next) {
+    env.addGlobal('asset_path', (filename) => {
+      let assetRoot = '';
+
+      if (isLocalPath(filename)) {
+        assetRoot = '/';
+
+        if (config.staticCdn) {
+          assetRoot = config.staticCdn;
+        } else if (config.env === 'production') {
+          assetRoot = `${(req.isHttps ? 'https' : req.protocol)}://${req.get('host')}/`;
+        }
+
+        if (manifestFile[filename]) {
+          filename = manifestFile[filename];
+        }
       }
 
       return `${assetRoot}${filename}`;
-    };
+    });
     next();
   };
 };
