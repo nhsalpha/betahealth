@@ -35,4 +35,7 @@ module.exports = {
     baseUrl: process.env.FEEDBACK_API_BASEURL,
     apiKey: process.env.FEEDBACK_API_KEY,
   },
+  contentApi: {
+    baseUrl: process.env.CONTENT_API_BASEURL,
+  },
 };

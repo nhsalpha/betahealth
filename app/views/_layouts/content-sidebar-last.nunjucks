@@ -1,41 +1,25 @@
-{% extends '_layouts/nhsuk.nunjucks' %}
+{% extends '_layouts/content-simple.nunjucks' %}
 
-{% block content %}
-  <article role="article">
+{% block main_content %}
+  <div class="page-section">
+    <div class="grid-row">
 
-    <div class="local-header">
-      <div class="local-header--inner">
-        <h1 class="local-header--title">{{ title }}</h1>
-        <div class="local-header--intro">
-          {% block local_header %}{% endblock %}
+      <div class="column__two-thirds">
+        <div class="reading-width">
+          {% for component in main %}
+            {{ components[component.type](component.content) }}
+          {% endfor %}
         </div>
       </div>
-    </div>
 
-    {% block main_content_before %}{% endblock %}
-
-    <div class="page-section">
-      <div class="grid-row">
-
-        <div class="column__two-thirds">
-          <div class="reading-width">
-            {% block main_content %}{% endblock %}
-          </div>
+      <div class="column__one-third-right">
+        <div class="reading-width">
+          {% for component in sidebar %}
+            {{ components[component.type](component.content) }}
+          {% endfor %}
         </div>
-
-        <div class="column__one-third-right">
-          <div class="reading-width">
-            {% block sidebar_content %}{% endblock %}
-          </div>
-        </div>
-
       </div>
+
     </div>
-
-    {% block main_content_after %}{% endblock %}
-
-    {% if nonEmergencyCallout %}
-      {% include '_includes/non-emergency-callout.nunjucks' %}
-    {% endif %}
-  </article>
+  </div>
 {% endblock %}

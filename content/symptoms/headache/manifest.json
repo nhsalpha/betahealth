@@ -1,0 +1,24 @@
+{
+  "layout": "content-sidebar-last",
+  "title": "Headache",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/headache/pages/introduction.aspx",
+  "localHeader": [
+    {
+      "type": "markdown",
+      "content": "Most headaches will go away on their own and aren’t a sign of something more serious."
+    }
+  ],
+  "main": [
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "content": "!file=sidebar-content.md"
+    }
+  ]
+}

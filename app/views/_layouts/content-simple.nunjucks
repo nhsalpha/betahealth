@@ -1,4 +1,5 @@
 {% extends '_layouts/nhsuk.nunjucks' %}
+{% import '_macros/components.nunjucks' as components %}
 
 {% block content %}
   <article role="article">
@@ -6,24 +7,39 @@
     <div class="local-header">
       <div class="local-header--inner">
         <h1 class="local-header--title">{{ title }}</h1>
-        <div class="local-header--intro">
-          {% block local_header %}{% endblock %}
-        </div>
+        {% block local_header %}
+          {% if localHeader %}
+            <div class="local-header--intro">
+              {% for component in localHeader %}
+                {% if component.type == 'section_nav' %}
+                  {{ components[component.type](main) }}
+                {% else %}
+                  {{ components[component.type](component.content) }}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endblock %}
       </div>
     </div>
 
-    {% block main_content_before %}{% endblock %}
+    {% block main_content_before %}
+      {% for component in before %}
+        {{ components[component.type](component.content) }}
+      {% endfor %}
+    {% endblock %}
 
-    <div class="page-section">
-      <div class="reading-width">
-        {% block main_content %}{% endblock %}
-      </div>
-    </div>
+    {% block main_content %}
+      {% for component in main %}
+        {{ components[component.type](component.content) }}
+      {% endfor %}
+    {% endblock %}
 
     {% block main_content_after %}{% endblock %}
 
     {% if nonEmergencyCallout %}
       {% include '_includes/non-emergency-callout.nunjucks' %}
     {% endif %}
+
   </article>
 {% endblock %}
