@@ -120,6 +120,15 @@ md.use(markdownItContainer, 'inline_reveal', {
     return '</div>\n</details>\n';
   },
 });
+md.use(markdownItContainer, 'cta_borderleft_chevronright', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<div class="cta--borderleft-chevronright">\n';
+    }
+    return '</div>\n';
+  },
+});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
