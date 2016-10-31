@@ -1,0 +1,37 @@
+$_chevron-padding: $default-spacing-unit * 2;
+
+.cta--borderleft-chevronright {
+  border-left: 4px solid $black;
+  padding-bottom: $default-spacing-unit * .75;
+  padding-left: $default-spacing-unit * 1.5;
+  padding-top: $default-spacing-unit * .75;
+
+  a {
+    color: $black;
+    font-weight: bold;
+    position: relative;
+
+    &:before,
+    &:after {
+      border-style: solid;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      top: 4px;
+      width: 0;
+    }
+
+    &:before {
+      border-color: transparent transparent transparent $black;
+      border-width: 10px 0 10px 10px;
+      right: -$_chevron-padding;
+    }
+
+    &:after {
+      border-color: transparent transparent transparent $white;
+      border-width: 10px 0 10px 10px;
+      right: -($_chevron-padding - 6px);
+    }
+  }
+}
