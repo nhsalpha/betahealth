@@ -16,6 +16,7 @@ $.fn.tabs = function (settings) {
     alwaysScrollToTop: true,
     tabActiveClass: 'tabs-panel-selected',
     navActiveClass: 'tabs-selected',
+    scrollOnload: false,
   }, settings);
 
   return $(this).each(function () {
@@ -140,12 +141,20 @@ $.fn.tabs = function (settings) {
     });
 
     // function to select a tab from the url hash
-    function selectTabFromHash(hash) {
+    function selectTabFromHash(hash, pageLoad) {
       var currHash = hash || window.location.hash;
       var hashedTab = tabsNav.find('a[href="#' + currHash.replace('#', '') + '"]');
+      var tab = $(currHash + tabIDsuffix);
 
       if (hashedTab.size() > 0) {
         selectTab(hashedTab, true);
+
+        if(o.scrollOnload && pageLoad){
+          var scrollPos = Math.min(tab.offset().top, hashedTab.offset().top);
+          window.setTimeout(function scrollTimeout() {
+            $(document).scrollTop(scrollPos);
+          }, 0);
+        }
       } else {
         selectTab(tabsNav.find('a:first'), true);
       }
@@ -161,7 +170,7 @@ $.fn.tabs = function (settings) {
     if (o.updateHash) {
       $(window).bind('hashchange', function () {
         var newHash = location.hash;
-        selectTabFromHash(newHash, true);
+        selectTabFromHash(newHash, false);
       });
     }
 

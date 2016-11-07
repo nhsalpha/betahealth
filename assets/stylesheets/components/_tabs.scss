@@ -1,14 +1,14 @@
 $_border-colour: shade($grey-3, 20);
 
-  .tabs--tab-container {
+  .tabs__tab-container {
     margin-top: 0;
   }
 
-  .tabs--tab-content {
+  .tabs__tab-content {
     margin-top: 0;
   }
 
-  .tabs--tab-heading {
+  .tabs__tab-heading {
     // scss-lint:disable SelectorFormat
     .js-enabled & {
       @extend %visuallyhidden;
@@ -16,7 +16,7 @@ $_border-colour: shade($grey-3, 20);
     // scss-lint:enable SelectorFormat
   }
 
-  .tabs--nav {
+  .tabs__nav {
     @extend %clearfix;
     border: solid $_border-colour;
     border-width: 0 1px 0 0;
@@ -24,7 +24,7 @@ $_border-colour: shade($grey-3, 20);
     padding: 0;
   }
 
-  .tabs--nav-item {
+  .tabs__nav-item {
     border: solid $_border-colour;
     border-width: 0 0 1px 1px;
     display: block;
@@ -39,12 +39,12 @@ $_border-colour: shade($grey-3, 20);
       width: 25%;
     }
 
-    + .tabs--nav-item {
+    + .tabs__nav-item {
       margin-top: 0;
     }
   }
 
-  .tabs--nav-link {
+  .tabs__nav-link {
     background-color: $grey-3;
     display: block;
     margin: 0;

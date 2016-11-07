@@ -2,15 +2,15 @@
   <div class="page-section">
 
     {% if FEEDBACKFORM.outcome == "success" %}
-      <p class="form-label form-label__large">Thank you for your feedback.</p>
+      <p class="form-label form-label--large">Thank you for your feedback.</p>
     {% endif %}
 
     {% if FEEDBACKFORM.outcome != "success" %}
       <form action="{{ path }}" name="feedback-form" method="post">
         {% if FEEDBACKFORM.outcome == "failure" %}
           <div class="grid-row">
-            <div class="column__two-thirds">
-              <div class="callout callout__error" role="group" aria-labelledby="error-summary" tabindex="-1">
+            <div class="column--two-thirds">
+              <div class="callout callout--error" role="group" aria-labelledby="error-summary" tabindex="-1">
                 <p id="error-summary">
                   {% if FEEDBACKFORM.errorType == "submission" %}
                     Sorry, the feedback wasn't complete. Please make sure to tell us
@@ -35,11 +35,11 @@
           </div>
         {% endif %}
 
-        <label for="feedback-form-comments" class="form-label form-label__large">
+        <label for="feedback-form-comments" class="form-label form-label--large">
           What were you looking for?
         </label>
         <div class="grid-row">
-          <div class="column__two-thirds">
+          <div class="column--two-thirds">
             <textarea
               name="feedback-form-comments"
               id="feedback-form-comments"
@@ -52,41 +52,41 @@
         </div>
 
         <fieldset>
-          <legend class="form-label form-label__large" id="looking-for-group">
+          <legend class="form-label form-label--large" id="looking-for-group">
             Did you find what you were looking for?
           </legend>
           <div class="grid-row">
-            <div class="column__two-thirds">
-              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+            <div class="column--two-thirds">
+              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
                 <input
                   type="radio"
                   name="feedback-form-found"
                   value="Yes"
-                  class="selection-button--input"
+                  class="selection-button__input"
                   {% if FEEDBACKFORM.data['feedback-form-found'] == 'Yes' %}
                     checked=checked
                   {% endif %}>
                 Yes
               </label>
 
-              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
                 <input
                   type="radio"
                   name="feedback-form-found"
                   value="No"
-                  class="selection-button--input"
+                  class="selection-button__input"
                   {% if FEEDBACKFORM.data['feedback-form-found'] == 'No' %}
                     checked=checked
                   {% endif %}>
                 No
               </label>
 
-              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
                 <input
                   type="radio"
                   name="feedback-form-found"
                   value="Partially"
-                  class="selection-button--input"
+                  class="selection-button__input"
                   {% if FEEDBACKFORM.data['feedback-form-found'] == 'Partially' %}
                     checked=checked
                   {% endif %}>
@@ -97,7 +97,7 @@
         </fieldset>
 
         <button type="submit" class="button" data-analytics="event" data-analytics-type="SendFeedback">Send feedback</button>
-        <button type="reset" class="button button__cancel" data-analytics="event" data-analytics-type="CancelFeedback">Cancel</button>
+        <button type="reset" class="button button--cancel" data-analytics="event" data-analytics-type="CancelFeedback">Cancel</button>
 
         <input type="hidden" name="feedback-form-path" value="{{ FEEDBACKFORM.path }}">
         <input type="hidden" name="_csrf" value="{{ csrfToken }}">

@@ -6,6 +6,10 @@ Speak to your pharmacist about medicine to help with:
 * indigestion (burning pain or discomfort after eating)
 * constipation (can’t poo)
 
+!!! info_compact
+[Find an open pharmacy near you](/finders/find-help?context=stomach-ache)
+!!!
+
 There are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)
 and [constipation.](http://www.nhs.uk/Conditions/Constipation/Pages/Treatment.aspx)
 

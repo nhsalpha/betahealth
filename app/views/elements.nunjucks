@@ -114,16 +114,16 @@
           <legend class="form-label">Stacked radio buttons</legend>
 
           <div class="form-group">
-            <label for="radio-1" class="selection-button selection-button__radio">
-              <input id="radio-1" type="radio" name="radio-group" value="radio-1" class="selection-button--input">
+            <label for="radio-1" class="selection-button selection-button--radio">
+              <input id="radio-1" type="radio" name="radio-group" value="radio-1" class="selection-button__input">
               Radio 1
             </label>
-            <label for="radio-2" class="selection-button selection-button__radio">
-              <input id="radio-2" type="radio" name="radio-group" value="radio-2" class="selection-button--input">
+            <label for="radio-2" class="selection-button selection-button--radio">
+              <input id="radio-2" type="radio" name="radio-group" value="radio-2" class="selection-button__input">
               Radio 2
             </label>
-            <label for="radio-3" class="selection-button selection-button__radio">
-              <input id="radio-3" type="radio" name="radio-group" value="radio-3" class="selection-button--input">
+            <label for="radio-3" class="selection-button selection-button--radio">
+              <input id="radio-3" type="radio" name="radio-group" value="radio-3" class="selection-button__input">
               Radio 3
             </label>
           </div>
@@ -133,16 +133,16 @@
           <legend>Inline radio buttons</legend>
 
           <div class="form-group">
-            <label for="inline-radio-1" class="selection-button selection-button__inline selection-button__radio">
-              <input id="inline-radio-1" type="radio" name="inline-radio-group" value="inline-radio-1" class="selection-button--input">
+            <label for="inline-radio-1" class="selection-button selection-button--inline selection-button--radio">
+              <input id="inline-radio-1" type="radio" name="inline-radio-group" value="inline-radio-1" class="selection-button__input">
               Radio 1
             </label>
-            <label for="inline-radio-2" class="selection-button selection-button__inline selection-button__radio">
-              <input id="inline-radio-2" type="radio" name="inline-radio-group" value="inline-radio-2" class="selection-button--input">
+            <label for="inline-radio-2" class="selection-button selection-button--inline selection-button--radio">
+              <input id="inline-radio-2" type="radio" name="inline-radio-group" value="inline-radio-2" class="selection-button__input">
               Radio 2
             </label>
-            <label for="inline-radio-3" class="selection-button selection-button__inline selection-button__radio">
-              <input id="inline-radio-3" type="radio" name="inline-radio-group" value="inline-radio-3" class="selection-button--input">
+            <label for="inline-radio-3" class="selection-button selection-button--inline selection-button--radio">
+              <input id="inline-radio-3" type="radio" name="inline-radio-group" value="inline-radio-3" class="selection-button__input">
               Radio 3
             </label>
           </div>
@@ -152,16 +152,16 @@
           <legend>Stacked checkboxes</legend>
 
           <div class="form-group">
-            <label for="checkbox-1" class="selection-button selection-button__checkbox">
-              <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1" class="selection-button--input">
+            <label for="checkbox-1" class="selection-button selection-button--checkbox">
+              <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1" class="selection-button__input">
               Checkbox 1
             </label>
-            <label for="checkbox-2" class="selection-button selection-button__checkbox">
-              <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" class="selection-button--input">
+            <label for="checkbox-2" class="selection-button selection-button--checkbox">
+              <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" class="selection-button__input">
               Checkbox 2
             </label>
-            <label for="checkbox-3" class="selection-button selection-button__checkbox">
-              <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" class="selection-button--input">
+            <label for="checkbox-3" class="selection-button selection-button--checkbox">
+              <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" class="selection-button__input">
               Checkbox 3
             </label>
           </div>
@@ -171,16 +171,16 @@
           <legend>Inline checkboxes</legend>
 
           <div class="form-group">
-            <label for="inline-checkbox-1" class="selection-button selection-button__inline selection-button__checkbox">
-              <input id="inline-checkbox-1" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-1" class="selection-button--input">
+            <label for="inline-checkbox-1" class="selection-button selection-button--inline selection-button--checkbox">
+              <input id="inline-checkbox-1" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-1" class="selection-button__input">
               Checkbox 1
             </label>
-            <label for="inline-checkbox-2" class="selection-button selection-button__inline selection-button__checkbox">
-              <input id="inline-checkbox-2" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-2" class="selection-button--input">
+            <label for="inline-checkbox-2" class="selection-button selection-button--inline selection-button--checkbox">
+              <input id="inline-checkbox-2" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-2" class="selection-button__input">
               Checkbox 2
             </label>
-            <label for="inline-checkbox-3" class="selection-button selection-button__inline selection-button__checkbox">
-              <input id="inline-checkbox-3" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-3" class="selection-button--input">
+            <label for="inline-checkbox-3" class="selection-button selection-button--inline selection-button--checkbox">
+              <input id="inline-checkbox-3" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-3" class="selection-button__input">
               Checkbox 3
             </label>
           </div>
@@ -189,23 +189,23 @@
 
       <h2>Callouts</h2>
 
-      <div class="callout callout__info">
+      <div class="callout callout--info">
         <p>An information callout</p>
       </div>
 
-      <div class="callout callout__attention">
+      <div class="callout callout--attention">
         <p>An attention callout</p>
       </div>
 
-      <div class="callout callout__warning">
+      <div class="callout callout--warning">
         <p>A warning callout</p>
       </div>
 
-      <div class="callout callout__alert">
+      <div class="callout callout--alert">
         <p>An alert callout</p>
       </div>
 
-      <div class="callout callout__severe">
+      <div class="callout callout--severe">
         <p>A severe callout</p>
       </div>
     </div>
@@ -214,7 +214,7 @@
 
     <details>
       <summary>
-        <span class="details--summary">Help with something</span>
+        <span class="details__summary">Help with something</span>
       </summary>
 
       <div>
@@ -222,10 +222,10 @@
       </div>
     </details>
 
-    <details class="details__inline">
+    <details class="details--inline">
       <summary>
-        <span class="details--summary">
-          Vivamus magna. Cras in mi at <span class="details--cta">felis aliquet congue.</span>
+        <span class="details__summary">
+          Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
         </span>
       </summary>
 

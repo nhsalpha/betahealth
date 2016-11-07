@@ -7,7 +7,7 @@
 }
 
 
-.notification-banner__js-hidden {
+.notification-banner--js-hidden {
   // scss-lint:disable SelectorFormat
   .js-enabled & {
     display: none;
@@ -15,7 +15,7 @@
   // scss-lint:enable SelectorFormat
 }
 
-.notification-banner__hiviz {
+.notification-banner--hiviz {
   background-color: tint($yellow, 25%);
 
   a {
@@ -41,7 +41,7 @@
   }
 }
 
-  .notification-banner--inner {
+  .notification-banner__inner {
     @extend %site-width-container;
     padding: ($baseline-grid-unit * 2) 0;
   }

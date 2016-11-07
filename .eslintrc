@@ -1,7 +1,7 @@
 {
   "extends": "airbnb-base",
   "rules": {
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": [2, "always"],
     "import/no-extraneous-dependencies": 0,
     "no-prototype-builtins": 0,
     "no-underscore-dangle": 0,

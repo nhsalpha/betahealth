@@ -24,7 +24,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   }
 }
 
-  .selection-button--input {
+  .selection-button__input {
     cursor: pointer;
     margin-right: 10px;
 
@@ -41,11 +41,11 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
     }
   }
 
-.selection-button__inline {
+.selection-button--inline {
   @include media(tablet) {
     float: left;
 
-    + .selection-button__inline {
+    + .selection-button--inline {
       margin-left: $default-spacing-unit * 2;
       margin-top: 0;
     }
@@ -53,7 +53,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 }
 
 
-.selection-button__radio {
+.selection-button--radio {
   .js-enabled & {
     &::before {
       background: $white;
@@ -83,7 +83,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   }
 }
 
-.selection-button__checkbox {
+.selection-button--checkbox {
   .js-enabled & {
     &::before {
       background: $white;
@@ -114,8 +114,8 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   }
 }
 
-.selection-button__radio,
-.selection-button__checkbox {
+.selection-button--radio,
+.selection-button--checkbox {
   .js-enabled & {
     &.is-focused {
       &::before {

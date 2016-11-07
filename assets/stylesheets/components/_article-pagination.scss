@@ -6,9 +6,9 @@
   padding-left: 0;
 }
 
-  .article-pagination--item {
+  .article-pagination__item {
     @include media(tablet) {
-      + .article-pagination--item {
+      + .article-pagination__item {
         margin-top: 0;
       }
     }
@@ -20,24 +20,24 @@
   }
 
   @include media(tablet) {
-    .article-pagination--item__left {
+    .article-pagination__item--left {
       float: left;
       width: 47%;
     }
 
-    .article-pagination--item__right {
+    .article-pagination__item--right {
       float: right;
       text-align: right;
       width: 47%;
     }
   }
 
-  .article-pagination--prefix {
+  .article-pagination__prefix {
     @include core-font(16);
     color: $black;
     display: block;
   }
 
-  .article-pagination--title {
+  .article-pagination__title {
     text-decoration: underline;
   }

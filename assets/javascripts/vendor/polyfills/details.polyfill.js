@@ -133,10 +133,10 @@
         var twisty = document.createElement('i')
 
         if (openAttr === true) {
-          twisty.className = 'details--arrow is-open'
+          twisty.className = 'details__arrow is-open'
           twisty.appendChild(document.createTextNode('\u25bc'))
         } else {
-          twisty.className = 'details--arrow is-closed'
+          twisty.className = 'details__arrow is-closed'
           twisty.appendChild(document.createTextNode('\u25ba'))
         }
 
@@ -167,7 +167,7 @@
 
       if (summary.__twisty) {
         summary.__twisty.firstChild.nodeValue = (expanded ? '\u25ba' : '\u25bc')
-        summary.__twisty.setAttribute('class', (expanded ? 'details--arrow is-closed' : 'details--arrow is-open'))
+        summary.__twisty.setAttribute('class', (expanded ? 'details__arrow is-closed' : 'details__arrow is-open'))
       }
 
       return true

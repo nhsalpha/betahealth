@@ -20,7 +20,7 @@ a {
   }
 }
 
-%link__reverse-polarity {
+%link--reverse-polarity {
   &:link {
     color: $link-reverse-polarity;
   }
@@ -42,6 +42,6 @@ a {
   }
 }
 
-.link__reverse-polarity {
-  @extend %link__reverse-polarity;
+.link--reverse-polarity {
+  @extend %link--reverse-polarity;
 }

@@ -11,12 +11,12 @@
   }
 }
 
-  .card--caption {
+  .card__caption {
     margin-top: 0;
     padding: $default-spacing-unit;
   }
 
-.card__full-width {
+.card--full-width {
   margin-right: 0;
   max-width: 40em;
 

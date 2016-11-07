@@ -16,7 +16,8 @@
     "coverage": "npm_config_coverage=true npm run test:unit"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": "~6.9.1",
+    "npm": "~4.0.2"
   },
   "dependencies": {
     "JSON2": "~0.1.0",
@@ -32,10 +33,10 @@
     "cookie-parser": "~1.4.3",
     "csurf": "~1.9.0",
     "del": "~2.2.2",
-    "eslint": "~3.7.1",
-    "eslint-config-airbnb-base": "~8.0.0",
-    "eslint-plugin-import": "~1.16.0",
-    "eslint-plugin-mocha": "~4.6.0",
+    "eslint": "~3.9.1",
+    "eslint-config-airbnb-base": "~9.0.0",
+    "eslint-plugin-import": "~2.1.0",
+    "eslint-plugin-mocha": "~4.7.0",
     "express": "~4.14.0",
     "express-sslify": "~1.1.0",
     "express-validator": "~2.20.10",

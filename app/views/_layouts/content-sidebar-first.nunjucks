@@ -4,7 +4,7 @@
   <div class="page-section">
     <div class="grid-row">
 
-      <div class="column__one-third-right">
+      <div class="column--one-third-right">
         <div class="reading-width">
           {% for component in sidebar %}
             {{ components[component.type](component.content) }}
@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="column__two-thirds">
+      <div class="column--two-thirds">
         <div class="reading-width">
           {% for component in main %}
             {{ components[component.type](component.content) }}

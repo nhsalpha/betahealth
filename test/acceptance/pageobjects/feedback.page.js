@@ -36,7 +36,7 @@ const feedbackPage = Object.create(page, {
   },
   errorSummary: {
     get: () => {
-      return browser.element('#page-feedback .callout__error');
+      return browser.element('#page-feedback .callout--error');
     },
   },
 

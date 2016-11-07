@@ -6,6 +6,7 @@ module.exports = {
   init: () => {
     $('.js-tabs').tabs({
       updateHash: true,
+      scrollOnload: true,
       tabActiveClass: 'is-active',
       navActiveClass: 'is-active',
     });

@@ -1,12 +1,15 @@
 <div class="local-header">
   {% if returnPath %}
-    <a href="{{ returnPath }}" class="local-header--return">Back</a>
+    <a href="{{ returnPath }}"
+      class="local-header__return"
+      data-analytics="back"
+      data-analytics-type="local-header">Back</a>
   {% endif %}
 
-  <h1 class="local-header--title">{{ guide.title if guide else title }}</h1>
+  <h1 class="local-header__title">{{ guide.title if guide else title }}</h1>
 
   {% if localHeader or guide %}
-    <div class="local-header--intro">
+    <div class="local-header__intro">
       {% if guide %}
         {{ components.numbered_navigation(guide.pages, slug) }}
       {% endif %}

@@ -12,11 +12,11 @@
   }
 
   a {
-    @extend %link__reverse-polarity;
+    @extend %link--reverse-polarity;
   }
 }
 
-  .global-footer--inner {
+  .global-footer__inner {
     @extend %site-width-container;
     padding-bottom: $baseline-grid-unit * 24;
     padding-top: $baseline-grid-unit * 8;

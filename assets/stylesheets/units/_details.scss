@@ -40,31 +40,31 @@ details {
 }
 
   // Underline only summary text (not the arrow)
-  .details--summary {
+  .details__summary {
     text-decoration: underline;
 
-    .details__inline & {
+    .details--inline & {
       text-decoration: none;
     }
   }
 
   // Match fallback arrow spacing with -webkit default
-  .details--arrow {
+  .details__arrow {
     font-style: normal;
     margin-right: .35em;
 
-    .details__inline & {
+    .details--inline & {
       display: none;
     }
   }
 
-  .details--cta {
+  .details__cta {
     color: $link-colour;
     cursor: pointer;
     text-decoration: underline;
   }
 
-.details__inline {
+.details--inline {
   summary {
     color: $black;
     cursor: default;
@@ -80,7 +80,7 @@ details {
     &:focus {
       outline: none;
 
-      .details--cta {
+      .details__cta {
         outline: 3px solid $focus-colour;
       }
     }

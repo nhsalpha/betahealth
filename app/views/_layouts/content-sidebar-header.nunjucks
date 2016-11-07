@@ -7,11 +7,11 @@
   <div class="page-section">
     <div class="grid-row">
 
-      <div class="column__one-third">
+      <div class="column--one-third">
         {% include '_includes/local-header.nunjucks' %}
       </div>
 
-      <div class="column__two-thirds">
+      <div class="column--two-thirds">
         <div class="reading-width">
           {% for component in main %}
             {{ components[component.type](component.content) }}

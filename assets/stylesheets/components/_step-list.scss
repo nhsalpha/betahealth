@@ -3,10 +3,10 @@ $_step-width: $baseline-grid-unit * 8;
 .step-list {
   @include core-font(16);
   counter-reset: li;
-  padding-left: 0;
+  padding: $baseline-grid-unit 0;
 }
 
-  .step-list--item {
+  .step-list__item {
     border-left: $baseline-grid-unit / 2 solid $white;
     list-style: none;
     margin-left: $baseline-grid-unit * 4;
@@ -18,7 +18,7 @@ $_step-width: $baseline-grid-unit * 8;
       padding-bottom: $baseline-grid-unit * 10;
     }
 
-    + .step-list--item {
+    + .step-list__item {
       margin-top: 0;
     }
 
@@ -33,12 +33,12 @@ $_step-width: $baseline-grid-unit * 8;
       line-height: $_step-width;
       position: absolute;
       text-align: center;
-      top: -4px;
+      top: -($baseline-grid-unit);
       width: $_step-width;
     }
 
     &.is-last {
       border: 0;
-      padding-bottom: 4px;
+      padding-bottom: 0;
     }
   }

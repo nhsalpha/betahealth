@@ -3,7 +3,7 @@
   border-bottom: $baseline-grid-unit / 2 solid $nhs-blue;
 }
 
-  .global-header--inner {
+  .global-header__inner {
     @extend %site-width-container;
     padding-bottom: $baseline-grid-unit * 4;
     padding-top: $baseline-grid-unit * 4;
@@ -14,7 +14,7 @@
     }
   }
 
-  .global-header--link {
+  .global-header__link {
     background: url("../images/logotype-nhs-colour__reverse.png") no-repeat;
     background-size: contain;
     display: block;

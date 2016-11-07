@@ -16,17 +16,17 @@ const guidePage = Object.create(page, {
   },
   navigation: {
     get: () => {
-      return browser.element('.local-header nav.link-list--row');
+      return browser.element('.local-header nav.link-list__row');
     },
   },
   navigationLinks: {
     get: () => {
-      return browser.elements('.local-header nav.link-list--row a');
+      return browser.elements('.local-header nav.link-list__row a');
     },
   },
   currentPage: {
     get: () => {
-      return browser.element('.local-header nav.link-list--row .is-active');
+      return browser.element('.local-header nav.link-list__row .is-active');
     },
   },
   pagination: {

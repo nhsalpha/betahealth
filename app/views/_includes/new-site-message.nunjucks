@@ -1,5 +1,5 @@
-<div class="notification-banner notification-banner__hiviz js-feedback-banner">
-  <p class="notification-banner--inner">
+<div class="notification-banner notification-banner--hiviz js-feedback-banner">
+  <p class="notification-banner__inner">
     This is a new page.
     {% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
       <a href="#page-feedback" class="js-feedback-toggle" data-analytics="event" data-analytics-type="TellUsWhatYouThink">Tell us what you think</a> or go

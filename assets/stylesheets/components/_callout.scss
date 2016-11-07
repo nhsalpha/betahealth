@@ -7,66 +7,45 @@
   }
 }
 
-  .callout--inner {
-    @extend %site-width-container;
-  }
-
-.callout__muted {
+.callout--muted {
   background-color: $grey-3;
 }
 
-.callout__info {
+.callout--info {
   background-color: $grey-4;
   border: solid $grey-2;
   border-width: 0 0 0 $baseline-grid-unit;
 }
 
-.callout__attention {
+.callout--attention {
   border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
 }
 
-.callout__warning {
+.callout--warning {
   background-color: tint($yellow, 20);
   border: solid shade($yellow, 20);
   border-width: $baseline-grid-unit 0;
 }
 
-.callout__alert {
+.callout--alert {
   background-color: $red-10;
   border-top: $baseline-grid-unit * 3 solid $red;
 }
 
-.callout__severe {
+.callout--severe {
   background-color: $red;
   color: $white;
 
   a {
-    @extend %link__reverse-polarity;
+    @extend %link--reverse-polarity;
   }
 }
 
-.callout__error {
+.callout--error {
   border: $baseline-grid-unit solid $red;
 }
 
-.callout__compact {
+.callout--compact {
   display: inline-block;
   padding: $baseline-grid-unit * 4 $baseline-grid-unit * 6;
-}
-
-.callout__overlap {
-  @include media(desktop) {
-    @include background-clip(padding-box);
-    position: relative;
-    top: -($baseline-grid-unit * 16);
-
-    &.callout__severe {
-      border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
-      padding-top: 0;
-
-      @include ie-lte(8) {
-        border-top: ($baseline-grid-unit * 8) solid $red;
-      }
-    }
-  }
 }

@@ -1,0 +1,23 @@
+engines:
+  eslint:
+    enabled: true
+    channel: "eslint-3"
+  scss-lint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+  nodesecurity:
+    enabled: true
+ratings:
+  paths:
+  - "app/**"
+  - "config/**"
+  - "lib/**"
+  - "app.js"
+exclude_paths:
+- "**/vendor/"
+- "test/"
+- "gulp/"

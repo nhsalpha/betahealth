@@ -30,8 +30,8 @@
   }
 }
 
-  .local-header--return {
-    @extend %link__reverse-polarity;
+  .local-header__return {
+    @extend %link--reverse-polarity;
     background-color: $nhs-blue;
     border: $baseline-grid-unit / 2 solid tint($nhs-blue, 20);
     display: inline-block;
@@ -46,7 +46,7 @@
     }
   }
 
-  .local-header--title {
+  .local-header__title {
     @include bold-font(36);
     color: $white;
     margin: 0;
@@ -56,7 +56,7 @@
     }
   }
 
-  .local-header--intro {
+  .local-header__intro {
     color: $white;
     margin-top: $baseline-grid-unit * 4;
     max-width: $measure;

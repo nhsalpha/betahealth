@@ -3,7 +3,7 @@
   padding-left: 0;
 }
 
-.inline-list--item {
+.inline-list__item {
   @include media(tablet) {
     display: inline;
     margin-top: 0;
@@ -11,8 +11,8 @@
 }
 
 @include media(tablet) {
-  .inline-list__slash {
-    .inline-list--item {
+  .inline-list--slash {
+    .inline-list__item {
       &:after {
         content: "/";
       }

@@ -2,11 +2,11 @@
   background-color: tint($blue, 65%);
 }
 
-  .skiplinks--inner {
+  .skiplinks__inner {
     @extend %site-width-container;
   }
 
-  .skiplinks--link {
+  .skiplinks__link {
     color: $white;
     display: inline-block;
     left: -999em;

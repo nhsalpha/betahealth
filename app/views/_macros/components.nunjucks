@@ -40,7 +40,7 @@
 {% endmacro %}
 
 {% macro figure_list(list) %}
-  <div class="page-section page-section__collapse-bottom">
+  <div class="page-section page-section--collapse-bottom">
     {% for figure in list %}
       {{ figure_item(figure) }}
     {% endfor %}
@@ -48,7 +48,7 @@
 {% endmacro %}
 
 {% macro figure_item(figure) %}
-  <figure class="card{{ ' card__full-width' if figure.fullWidth }}">
+  <figure class="card{{ ' card--full-width' if figure.fullWidth }}">
     {{ image({
       srcset: figure.srcset,
       alt: figure.alt,
@@ -56,7 +56,7 @@
     }) }}
 
     {% if figure.caption %}
-      <figcaption class="card--caption">
+      <figcaption class="card__caption">
         {{ markdown(figure.caption) }}
       </figcaption>
     {% endif %}
@@ -66,21 +66,23 @@
 {% macro image_set(list) %}
   <section class="tabs js-tabs">
 
-    <div class="tabs--tab-container js-tabs-content">
+    <div class="tabs__tab-container js-tabs-content">
       {% for item in list %}
-        <div class="tabs--tab js-tab-pane" id="tab-{{ item.name | kebabcase }}">
-          <h3 class="tabs--tab-heading">{{ item.name }}</h3>
-          <div class="tabs--tab-content">
+        <div class="tabs__tab js-tab-pane" id="{{ item.name | kebabcase }}">
+          <h3 class="tabs__tab-heading">{{ item.name }}</h3>
+          <div class="tabs__tab-content">
             {{ image(item.image) }}
           </div>
         </div>
       {% endfor %}
     </div>
 
-    <ul class="tabs--nav js-tabs-nav">
+    <ul class="tabs__nav js-tabs-nav">
       {% for item in list %}
-        <li class="tabs--nav-item">
-          <a href="#tab-{{ item.name | kebabcase }}" class="tabs--nav-link">{{ item.name }}</a>
+        <li class="tabs__nav-item">
+          <a href="#{{ item.name | kebabcase }}"
+              class="tabs__nav-link"
+              data-analytics="image-set">{{ item.name }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -93,7 +95,7 @@
     <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
 
     {% for section in content.sections %}
-      <article class="section-unit section-unit__divider">
+      <article class="section-unit section-unit--divider">
         {% if section.title %}
           <h3>{{ section.title }}</h3>
         {% endif %}
@@ -110,7 +112,7 @@
   {% for article in content.articles %}
     <article class="section-unit">
       {% if article.label %}
-        <h3 class="section-unit--prefix">{{ article.label }}</h3>
+        <h3 class="section-unit__prefix">{{ article.label }}</h3>
       {% endif %}
 
       {% if article.title %}
@@ -135,7 +137,7 @@
       {% if component.type == 'section_list' %}
         <li class="link-list--item">
           <a href="#{{ component.content.title | kebabcase }}"
-             class="link__reverse-polarity"
+             class="link--reverse-polarity"
              data-analytics="anchor">
             {{ component.content.title }}
           </a>
@@ -150,9 +152,9 @@
     {% for component in components %}
       {% if component.type == 'article_list' %}
         {% for article in component.content.articles %}
-          <li class="step-list--item{{ ' is-last' if loop.last }}">
+          <li class="step-list__item{{ ' is-last' if loop.last }}">
             <a href="#{{ article.title | kebabcase }}"
-               class="link__reverse-polarity"
+               class="link--reverse-polarity"
                data-analytics="anchor">
               {{ article.title }}
             </a>
@@ -168,13 +170,13 @@
   {% set breakpoint = (items.length / 2) | round(0, 'ceil') %}
   {% set firstSplit = items.splice(0, breakpoint) %}
 
-  <nav role="navigation" aria-label="Parts to this guide" class="link-list--row">
+  <nav role="navigation" aria-label="Parts to this guide" class="link-list__row">
     {{ link_list(firstSplit, current_slug, {
-      classNames: ' link-list__one-half link-list__numbered'
+      classNames: ' link-list--one-half link-list--numbered'
     }) }}
 
     {{ link_list(items, current_slug, {
-      classNames: ' link-list__one-half link-list__numbered',
+      classNames: ' link-list--one-half link-list--numbered',
       start: breakpoint + 1
     }) }}
   </nav>
@@ -193,7 +195,7 @@
           {{ item.title }}
         {% else %}
           <a href="{{ item.slug }}"
-             class="link__reverse-polarity"
+             class="link--reverse-polarity"
              title="Part {{ step }}: {{ item.title }}"
              data-analytics="contents-navigation"
              data-step="{{ step }}">
@@ -209,19 +211,19 @@
   <nav role="navigation" aria-label="Guide pagination">
     <ul class="article-pagination">
       {% if next %}
-        <li class="article-pagination--item article-pagination--item__right">
+        <li class="article-pagination__item article-pagination__item--right">
           <a href="{{ next.slug }}" rel="next" data-analytics="pagination">
-            <span class="article-pagination--prefix">Next page:</span>
-            <span class="article-pagination--title">{{ next.title }}</span>
+            <span class="article-pagination__prefix">Next page:</span>
+            <span class="article-pagination__title">{{ next.title }}</span>
           </a>
         </li>
       {% endif %}
 
       {% if previous %}
-        <li class="article-pagination--item article-pagination--item__left">
+        <li class="article-pagination__item article-pagination__item--left">
           <a href="{{ previous.slug }}" rel="prev" data-analytics="pagination">
-            <span class="article-pagination--prefix">Previous page:</span>
-            <span class="article-pagination--title">{{ previous.title }}</span>
+            <span class="article-pagination__prefix">Previous page:</span>
+            <span class="article-pagination__title">{{ previous.title }}</span>
           </a>
         </li>
       {% endif %}
@@ -231,12 +233,12 @@
 
 {% macro panel(content) %}
   <article class="panel">
-    <div class="panel--content">
+    <div class="panel__content">
       {{ markdown(content.main) }}
     </div>
 
     {% if content.footer %}
-      <footer class="panel--footer">
+      <footer class="panel__footer">
         {{ markdown(content.footer) }}
       </footer>
     {% endif %}

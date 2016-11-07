@@ -42,7 +42,7 @@ dl {
   }
 }
 
-.list__chevron {
+.list--chevron {
   list-style: none;
   padding-left: $_chevron-padding;
 
@@ -71,11 +71,11 @@ dl {
       left: -$_chevron-padding;
 
       // variations for different coloured backgrounds
-      .callout__warning & {
+      .callout--warning & {
         border-left-color: $black;
       }
 
-      .callout__severe & {
+      .callout--severe & {
         border-left-color: $white;
       }
     }
@@ -86,20 +86,20 @@ dl {
       left: -($_chevron-padding + 6px);
 
       // variations for different coloured backgrounds
-      .callout__info &,
+      .callout--info &,
       .panel & {
         border-left-color: $grey-4;
       }
 
-      .callout__warning & {
+      .callout--warning & {
         border-left-color: tint($yellow, 20%);
       }
 
-      .callout__alert & {
+      .callout--alert & {
         border-left-color: $red-10;
       }
 
-      .callout__severe & {
+      .callout--severe & {
         border-left-color: $red;
       }
     }

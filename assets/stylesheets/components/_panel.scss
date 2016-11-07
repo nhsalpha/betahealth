@@ -2,11 +2,11 @@
   background-color: $grey-4;
 }
 
-  .panel--content {
+  .panel__content {
     @include element-padding;
   }
 
-  .panel--footer {
+  .panel__footer {
     @include element-padding;
     background-color: $grey-3;
 

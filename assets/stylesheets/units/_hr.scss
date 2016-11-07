@@ -5,11 +5,11 @@ hr {
   text-align: left;
   width: 130px;
 
-  .callout__alert & {
+  .callout--alert & {
     background-color: $grey-2;
   }
 
-  .callout__severe & {
+  .callout--severe & {
     background-color: $white;
   }
 }

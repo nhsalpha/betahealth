@@ -1,4 +1,4 @@
-.section-unit__divider {
+.section-unit--divider {
   @include element-padding(bottom);
   position: relative;
 
@@ -22,7 +22,7 @@
   }
 }
 
-  .section-unit--prefix {
+  .section-unit__prefix {
     @include core-font(20);
     border-top: $baseline-grid-unit solid $grey-3;
     display: inline-block;

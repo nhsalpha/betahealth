@@ -40,6 +40,7 @@ describe('guide page navigation', () => {
   it('should have both next and previous navigation item on middle page', () => {
     GuidePage.nextLink.click();
 
+    browser.pause(500);
     GuidePage.pagination.waitForExist(5000);
     GuidePage.nextLink.isExisting().should.be.true;
     GuidePage.prevLink.isExisting().should.be.true;
@@ -52,6 +53,7 @@ describe('guide page navigation', () => {
 
     browser.elementIdClick(lastLink.ELEMENT);
 
+    browser.pause(500);
     GuidePage.pagination.waitForExist(5000);
     GuidePage.nextLink.isExisting().should.be.false;
     GuidePage.prevLink.isExisting().should.be.true;

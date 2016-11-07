@@ -1,4 +1,4 @@
-.link-list--row {
+.link-list__row {
   @extend %grid-row;
 }
 
@@ -7,7 +7,7 @@
     padding-left: 0;
   }
 
-  .link-list__numbered {
+  .link-list--numbered {
     list-style: decimal;
 
     li {
@@ -15,10 +15,10 @@
     }
   }
 
-  .link-list__one-half {
+  .link-list--one-half {
     @include grid-column(1 / 2);
 
-    + .link-list__one-half {
+    + .link-list--one-half {
       margin-top: $default-spacing-unit / 2;
 
       @include media(desktop) {

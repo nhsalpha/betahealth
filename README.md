@@ -10,7 +10,7 @@ This application is a Node based application that runs on [beta.nhs.uk](http://b
 ## Dependencies
 
 * [Node.js v6](https://nodejs.org/en/)
-* [NPM v3](https://github.com/npm/npm)
+* [NPM v4](https://github.com/npm/npm) (`npm install npm@4 -g`)
 
 ## Installation
 
