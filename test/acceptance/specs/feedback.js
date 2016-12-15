@@ -24,6 +24,7 @@ describe('feedback mechanism', () => {
       FeedbackPage.open();
       FeedbackPage.feedbackContainer.isVisible().should.be.false;
       FeedbackPage.toggle.click();
+      browser.pause(750);
       FeedbackPage.feedbackContainer.isVisible().should.be.true;
       FeedbackPage.cancelBtn.click();
       FeedbackPage.feedbackContainer.isVisible().should.be.false;
@@ -32,6 +33,7 @@ describe('feedback mechanism', () => {
     it('should return an error if submitted empty', () => {
       FeedbackPage.open();
       FeedbackPage.toggle.click();
+      browser.pause(750);
       FeedbackPage.submit();
 
       FeedbackPage.errorSummary.waitForExist();

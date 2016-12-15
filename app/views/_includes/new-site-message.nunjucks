@@ -2,7 +2,7 @@
   <p class="notification-banner__inner">
     We are testing a new page.
     {% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
-      <a href="#page-feedback" class="js-feedback-toggle" data-analytics="event" data-analytics-type="TellUsWhatYouThink">Tell us what you think</a> or go
+      <a href="#page-feedback" class="js-feedback-toggle" data-analytics="event" data-analytics-type="TellUsWhatYouThinkTop">Tell us what you think</a> or go
     {% else %}
       Go
     {% endif %}

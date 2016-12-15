@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').get('bs-proxy');
 module.exports = {
   dep: ['build', 'serve', 'browserSync'],
   nativeTask: () => {
-    gulp.watch(`${paths.sourceJS}/**/*.js`, ['webpack']);
+    gulp.watch(`${paths.sourceJS}/**/*.js`, ['webpack-dev']);
     gulp.watch(`${paths.sourceImages}/**/*`, ['images']);
     gulp.watch(`${paths.sourceStyles}/**/*.scss`, ['css']);
     gulp.watch([

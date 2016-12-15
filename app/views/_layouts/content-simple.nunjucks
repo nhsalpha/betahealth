@@ -49,5 +49,7 @@
       {% include '_includes/non-emergency-callout.nunjucks' %}
     {% endif %}
 
+    {% include '_includes/feedback-message.nunjucks' %}
+
   </article>
 {% endblock %}

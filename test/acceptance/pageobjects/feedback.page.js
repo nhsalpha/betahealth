@@ -11,7 +11,7 @@ const feedbackPage = Object.create(page, {
   },
   toggle: {
     get: () => {
-      return browser.element('.js-feedback-toggle');
+      return browser.element('.js-feedback-banner .js-feedback-toggle');
     },
   },
   feedbackContainer: {

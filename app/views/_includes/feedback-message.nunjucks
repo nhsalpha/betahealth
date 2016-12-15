@@ -1,0 +1,14 @@
+{% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
+  <div class="page-section">
+    <div class="reading-width">
+      <p>
+        <a href="#page-feedback"
+          class="js-feedback-toggle"
+          data-analytics="event"
+          data-analytics-type="TellUsWhatYouThinkBtm">
+          Tell us what you think about this page
+        </a>
+      </p>
+    </div>
+  </div>
+{% endif %}
