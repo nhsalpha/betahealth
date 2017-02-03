@@ -1,0 +1,32 @@
+{
+  "layout": "content-simple",
+  "title": "Laryngitis",
+  "description": "Laryngitis is when your voice box or vocal cords in the throat become irritated or swollen. It usually goes away by itself within 1 to 2 weeks.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/laryngitis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Laryngitis is when your voice box or vocal cords in the throat become irritated or swollen. It usually goes away by itself within 1 to 2 weeks."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      }
+    ]
+  }
+}
