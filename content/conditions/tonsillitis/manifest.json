@@ -1,0 +1,44 @@
+{
+  "layout": "content-simple",
+  "title": "Tonsillitis",
+  "description": "Tonsillitis is a common childhood illness but teenagers and adults can get it too. It usually goes away on its own after a few days.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/tonsillitis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Tonsillitis is a common childhood illness but teenagers and adults can get it too. It usually goes away on its own after a few days."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "figure_list",
+        "options": {
+          "reveal": true,
+          "title": "What tonsils with pus-filled spots can look like"
+        },
+        "value": [
+          {
+            "srcset": [
+              "assets/images/tonsillitis/tonsillitis_400.jpg 400w",
+              "assets/images/tonsillitis/tonsillitis_640.jpg 640w",
+              "assets/images/tonsillitis/tonsillitis_800.jpg 800w",
+              "assets/images/tonsillitis/tonsillitis_1280.jpg 1280w"
+            ],
+            "caption": "Tonsillitis",
+            "alt": "Two fleshy, red lumps with yellow spots on them, inside the mouth either side of the back of the throat"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      }
+    ]
+  }
+}

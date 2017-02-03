@@ -33,6 +33,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Sprains and strains](/conditions/sprains-and-strains)
 * [Stye](/conditions/stye)
 * [Thrush](/conditions/thrush)
+* [Tonsillitis](/conditions/tonsillitis)
 * [Vaginal discharge](/conditions/vaginal-discharge)
 * [Warts](/conditions/warts)
 
