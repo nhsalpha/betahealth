@@ -25,10 +25,8 @@
         "value": [
           {
             "srcset": [
-              "assets/images/tonsillitis/tonsillitis_400.jpg 400w",
-              "assets/images/tonsillitis/tonsillitis_640.jpg 640w",
-              "assets/images/tonsillitis/tonsillitis_800.jpg 800w",
-              "assets/images/tonsillitis/tonsillitis_1280.jpg 1280w"
+              "assets/images/tonsillitis/tonsillitis_300.jpg 300w",
+              "assets/images/tonsillitis/tonsillitis_600.jpg 600w"
             ],
             "caption": "Tonsils with pus-filled spots at the back of the throat.",
             "alt": "Two fleshy, red lumps with yellow spots on them, inside the mouth either side of the back of the throat"
