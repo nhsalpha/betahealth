@@ -21,26 +21,26 @@
         "value": [
           {
             "srcset": [
-              "assets/images/scarlet-fever/tonsillitis_300.jpg 300w",
-              "assets/images/scarlet-fever/tonsillitis_600.jpg 600w"
+              "assets/images/scarlet-fever/scarlet-fever-body_300.jpg 300w",
+              "assets/images/scarlet-fever/scarlet-fever-body_600.jpg 600w"
             ],
             "caption": "A pink-red rash comes out, which feels like sandpaper and looks like sunburn. It starts on the chest and tummy",
             "alt": "Lots of small, flat, pink spots joined up as red patches on white skin covering the neck, chest, shoulders and tummy."
           },
           {
             "srcset": [
-              "assets/images/scarlet-fever/tonsillitis_300.jpg 300w",
-              "assets/images/scarlet-fever/tonsillitis_600.jpg 600w"
+              "assets/images/scarlet-fever/scarlet-fever-tongue_300.jpg 300w",
+              "assets/images/scarlet-fever/scarlet-fever-tongue_600.jpg 600w"
             ],
             "caption": "A white coating also appears on the tongue. This peels leaving it red and swollen (known as strawberry tongue).",
             "alt": "A swollen, reddened tongue partly covered with a white coating"
           },
           {
             "srcset": [
-              "assets/images/scarlet-fever/tonsillitis_300.jpg 300w",
-              "assets/images/scarlet-fever/tonsillitis_600.jpg 600w"
+              "assets/images/scarlet-fever/scarlet-fever-face_300.jpg 300w",
+              "assets/images/scarlet-fever/scarlet-fever-face_600.jpg 600w"
             ],
-            "caption": "The rash doesn't appear on the face, but the cheeks can be flushed.",
+            "caption": "The rash doesn’t appear on the face, but the cheeks can be flushed.",
             "alt": "A small child’s face with bright red cheeks"
           }
         ]
