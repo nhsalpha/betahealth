@@ -20,9 +20,9 @@ Sometimes they may:
 
 ## Treating scarlet fever
 
-Your GP will prescribe antibiotics. They don’t cure scarlet fever, but help
-you get better quicker and reduce the risk of getting serious illnesses, such
-as pneumonia.
+Your GP will prescribe antibiotics. They don’t cure scarlet fever, but will
+help you get better quicker. They also reduce the risk of serious illnesses,
+such as pneumonia.
 
 It’s important to keep taking antibiotics until they’re finished, even when you
 feel better.
@@ -48,7 +48,7 @@ You’re infectious from up to 7 days before the symptoms start, until:
 
 ## Is scarlet fever dangerous?
 
-In the past scarlet fever was a serious condition, but antibiotics now mean
+In the past scarlet fever was a serious illness, but antibiotics now mean
 it’s less common and easily treated.
 
 Cases of scarlet fever have increased in recent years. Public Health England
