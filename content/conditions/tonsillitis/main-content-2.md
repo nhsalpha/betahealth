@@ -4,8 +4,8 @@ If you’re not sure it’s tonsillitis [check other sore throat symptoms](/cond
 
 Symptoms will usually go away after 3 to 4 days.
 
-Tonsillitis isn’t contagious but the infections that cause it are (for
-example cold and flu).
+Tonsillitis isn’t contagious but the infections that cause it are (for example,
+colds and flu).
 
 To stop these infections from spreading:
 
