@@ -12,7 +12,7 @@ The main symptoms are:
 
 Children can also:
 
-- have a high temperature, 38C or above
+- have a high temperature of 38C or above
 - be off their food or drink
 - have difficulty breathing (but this is rare)
 

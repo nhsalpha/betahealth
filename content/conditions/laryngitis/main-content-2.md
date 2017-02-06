@@ -11,7 +11,7 @@ lozenges for the pain.
 ## See your GP if:
 
 - your symptoms don’t improve after 2 weeks
-- your symptoms are severe, for example it’s very painful, difficult to swallow
+- your symptoms are severe, for example it's very painful or difficult to swallow
 - you keep getting laryngitis or voice problems
 
 **Get an urgent GP appointment if your child has difficulty breathing.**
@@ -37,7 +37,7 @@ getting laryngitis.
 ## What causes laryngitis
 
 Laryngitis usually happens when you have an infection from a virus, for example
-cold or flu. Getting a flu vaccination can help you avoid those infections.
+cold or flu. Getting a flu vaccination can help you avoid the flu virus.
 
 Other things that can cause laryngitis include:
 
