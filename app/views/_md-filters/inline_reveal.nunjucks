@@ -1,5 +1,5 @@
-<details class="details--inline">
-  <summary data-analytics="summary">
+<details class="details--inline" id="{{ title | kebabcase }}">
+  <summary data-analytics="summary" tabindex="0">
     <span class="details__summary">
       {{ title.replace('[', '<span class="details__cta">').replace(']', '</span>') | safe }}
     </span>

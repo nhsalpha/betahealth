@@ -32,7 +32,7 @@ To help you get better more quickly:
 - rest and sleep
 - keep warm
 - drink plenty of water (fruit juice or squash mixed with water is ok) to [avoid dehydration](/conditions/dehydration#how-to-prevent-dehydration)
-- gargle salt water to soothe a [sore throat](/conditions/sore-throat)
+- [gargle salt water](/conditions/sore-throat#how-to-gargle-with-salt-water) to soothe a sore throat
 
 ## Your pharmacist can help with cold medicines
 

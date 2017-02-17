@@ -1,5 +1,5 @@
-<details>
-  <summary data-analytics="summary">
+<details id="{{ title | kebabcase }}">
+  <summary data-analytics="summary" tabindex="0">
     <span class="details__summary">{{ title }}</span>
   </summary>
   <div>

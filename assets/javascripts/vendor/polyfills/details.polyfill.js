@@ -148,6 +148,7 @@
     // Define a statechange function that updates aria-expanded and style.display
     // Also update the arrow position
     function statechange (summary) {
+      // console.log('changing state');
       var expanded = summary.__details.__summary.getAttribute('aria-expanded') === 'true'
       var hidden = summary.__details.__content.getAttribute('aria-hidden') === 'true'
 
@@ -175,6 +176,7 @@
 
     // Bind a click event to handle summary elements
     addClickEvent(document, function (e, summary) {
+      // console.log('binding click');
       if (!(summary = getAncestor(summary, 'summary'))) {
         return true
       }
