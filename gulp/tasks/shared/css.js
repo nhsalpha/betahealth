@@ -2,7 +2,6 @@ const sass = require('gulp-sass');
 const importOnce = require('node-sass-import-once');
 const gulpif = require('gulp-if');
 const autoprefixer = require('gulp-autoprefixer');
-const preprocess = require('gulp-preprocess');
 const sourcemaps = require('gulp-sourcemaps');
 const config = require('../../../config/config');
 const paths = require('../../paths');
@@ -33,11 +32,6 @@ module.exports = (gulp) => {
     }).on('error', handleError))
     .pipe(autoprefixer({
       browsers: ['> 0%', 'IE 8'],
-    }))
-    .pipe(preprocess({
-      context: {
-        FONT_CDN_PATH: config.fontCdn,
-      },
     }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(`${paths.outputStyles}`));

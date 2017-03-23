@@ -101,7 +101,6 @@ module.exports = (app, config) => {
         ],
         fontSrc: [
           'fast.fonts.net',
-          config.fontCdn,
         ],
         connectSrc: [
           '\'self\'',

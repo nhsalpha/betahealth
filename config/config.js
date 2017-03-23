@@ -13,7 +13,6 @@ module.exports = {
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   webtrendsId: process.env.WEBTRENDS_TRACKING_ID,
   hotjarId: process.env.HOTJAR_TRACKING_ID,
-  fontCdn: process.env.FONT_CDN || '/',
   staticCdn: process.env.STATIC_CDN,
   trustProtoHeader: typeof process.env.DYNO !== 'undefined',
   trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== 'undefined',

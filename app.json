@@ -8,7 +8,6 @@
     "SESSION_SECRET": {
       "generator": "secret"
     },
-    "FONT_CDN": "https://dhrlmnmyf2njb.cloudfront.net/",
     "CONNECTINGTOSERVICES_BASEURL": "https://c2s-staging.trafficmanager.net/"
   },
   "formation": {

@@ -6,10 +6,6 @@
   <link href="{{ CDN_HOST }}" rel="dns-prefetch">
 {% endif -%}
 
-{% if FONT_CDN_HOST != '/' -%}
-  <link href="{{ FONT_CDN_HOST }}" rel="dns-prefetch">
-{% endif -%}
-
 <!--[if IE]><link rel="shortcut icon" href="{{ asset_path('assets/images/favicon.ico') }}"><![endif]-->
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
 <link rel="apple-touch-icon" href="{{ asset_path('assets/images/apple-touch-icon.png') }}">
@@ -50,17 +46,10 @@
   <meta name="twitter:description" content="{{ description }}">
 {% endif -%}
 
-{% if font %}
-  <!--[if gt IE 8]><!--><link href="{{ asset_path('assets/stylesheets/nhsuk-' + font + '.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
-  <!--[if IE 6]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie6-' + font + '.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 7]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie7-' + font + '.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 8]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie8-' + font + '.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-{% else %}
-  <!--[if gt IE 8]><!--><link href="{{ asset_path('assets/stylesheets/nhsuk.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
-  <!--[if IE 6]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie6.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 7]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie7.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 8]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie8.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-{% endif %}
+<!--[if gt IE 8]><!--><link href="{{ asset_path('assets/stylesheets/nhsuk.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
+<!--[if IE 6]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie6.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 7]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie7.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 8]><link href="{{ asset_path('assets/stylesheets/nhsuk-ie8.css') }}" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
 <link rel="stylesheet" href="{{ asset_path('assets/stylesheets/nhsuk-print.css') }}" media="print" type="text/css">
 

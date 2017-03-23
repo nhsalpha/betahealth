@@ -121,7 +121,6 @@ environment.
 | `SHOW_DEVELOPMENT_ROUTES`          | Will show development only routes in a production environment if `true` | false |
 | `WEBTRENDS_TRACKING_ID`            | [Webtrends](https://www.webtrends.com/) tracking id                                                                                    |                          |
 | `HOTJAR_TRACKING_ID`               | [Hotjar](https://www.hotjar.com/) tracking id                                                                                          |                          |
-| `FONT_CDN`                         | Base url where the font is served                                                                                                      | /                        |
 | `STATIC_CDN`                       | Base url where all other assets are served                                                                                             |                          |
 | `LOG_LEVEL`                        | Level of logging to user                                                                                                               | warn                     |
 | `WDIO_BASEURL`                     | base URL for webdriver to use for acceptance tests                                                                                     | http://localhost:${PORT} |

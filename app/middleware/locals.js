@@ -5,7 +5,6 @@ module.exports = (config) => {
     res.locals.WEBTRENDS_TRACKING_ID = config.webtrendsId;
     res.locals.HOTJAR_TRACKING_ID = config.hotjarId;
     res.locals.CDN_HOST = config.staticCdn;
-    res.locals.FONT_CDN_HOST = config.fontCdn;
     res.locals.ORIGINAL_URL = req.originalUrl;
     res.locals.CANONICAL_URL = `${(req.isHttps ? 'https' : req.protocol)}://${req.get('host')}${req.originalUrl}`;
     /* eslint-enable no-param-reassign */
