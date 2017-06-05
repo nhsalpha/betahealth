@@ -18,18 +18,18 @@
     {% if next %}
       <li class="article-pagination__item article-pagination__item--right">
         <a href="{{ next.slug }}" rel="next" data-analytics="pagination">
-          <span class="article-pagination__prefix">Next page:</span>
-          <span class="article-pagination__title">{{ next.title }}</span>
-        </a>
+              <span class="article-pagination__prefix">Next page:</span>
+              <span class="article-pagination__title">{{ next.title }}</span>
+            </a>
       </li>
     {% endif %}
 
     {% if previous %}
       <li class="article-pagination__item article-pagination__item--left">
         <a href="{{ previous.slug }}" rel="prev" data-analytics="pagination">
-          <span class="article-pagination__prefix">Previous page:</span>
-          <span class="article-pagination__title">{{ previous.title }}</span>
-        </a>
+              <span class="article-pagination__prefix">Previous page:</span>
+              <span class="article-pagination__title">{{ previous.title }}</span>
+            </a>
       </li>
     {% endif %}
   </ul>
