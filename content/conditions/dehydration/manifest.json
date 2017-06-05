@@ -1,7 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Dehydration",
-  "description": "Dehydration means your body loses more fluids than you take in. This can affect your body but in most cases it’s nothing serious.",
+  "description": "Dehydration means your body loses more fluids than you take in. If it isn’t treated it can get worse and become a serious problem.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/dehydration/pages/introduction.aspx",
   "content": {

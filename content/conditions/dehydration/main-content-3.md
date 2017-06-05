@@ -1,1 +1,4 @@
-Your baby should get plenty of fluids. GPs usually advise:
+Once the dehydration has been treated your child will need to maintain their fluid levels. 
+ 
+GPs usually advise:  
+

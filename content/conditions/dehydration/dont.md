@@ -1,5 +1,5 @@
 ### Don’t
 
-- dilute formula
-- give babies fruit juice, it makes things like [diarrhoea](/conditions/diarrhoea) or vomiting worse
+- make formula weaker
+- give young children fruit juice or fizzy drinks, it makes things like [diarrhoea](/conditions/diarrhoea) or vomiting worse
 {.list--cross}
