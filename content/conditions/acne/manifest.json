@@ -1,0 +1,26 @@
+{
+  "layout": "guide",
+  "title": "Acne",
+  "guide": true,
+  "meta": {
+    "children": [
+      { "slug": "things-you-can-do" },
+      { "slug": "medicines-for-acne" },
+      { "slug": "seeing-a-doctor" },
+      { "slug": "what-acne-can-look-like" },
+      { "slug": "what-causes-acne" },
+      { "slug": "forums-and-support-groups" }
+    ]
+  },
+  "content": {
+    "header": [
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Everybody can get acne. It’s simply to do with the way your skin works. If you’re worried about scars or your acne makes you unhappy, see a GP."
+        }
+      }
+    ]
+  }
+}

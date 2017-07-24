@@ -1,0 +1,17 @@
+{
+  "layout": "content-simple",
+  "guide": true,
+  "title": "Support if you have acne",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Treatment.aspx",
+  "content": {
+    "main": [
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
+      }
+    ]
+  }
+}

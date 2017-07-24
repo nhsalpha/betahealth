@@ -1,0 +1,224 @@
+{
+  "layout": "content-simple",
+  "guide": true,
+  "title": "What acne can look like",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Complications.aspx",
+  "content": {
+    "main": [
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "variant": "collage",
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "variant": "collage",
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "variant": "collage",
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "id": 1,
+                "width": 600,
+                "height": 400,
+                "alt": "lorem ipsum alt",
+                "slug": "image-600.jpeg",
+                "version": 1,
+                "srcset": [
+                  "https://placekitten.com/g/1280/853 400w",
+                  "https://placekitten.com/g/1280/853 640w",
+                  "https://placekitten.com/g/1280/853 800w",
+                  "https://placekitten.com/g/1280/853 1280w"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "If you’re unsure it’s acne",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

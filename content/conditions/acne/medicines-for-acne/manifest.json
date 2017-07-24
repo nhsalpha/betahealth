@@ -1,0 +1,17 @@
+{
+  "layout": "content-simple",
+  "guide": true,
+  "title": "Medicines for acne",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Introduction.aspx",
+  "content": {
+    "main": [
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
+      }
+    ]
+  }
+}

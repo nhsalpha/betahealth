@@ -11,6 +11,10 @@
   {% if content.header.length or guide %}
     <div class="local-header__intro">
       {% if guide %}
+        {% for component in meta.parent.content.header %}
+          {% component name=component.type, context=component.props %}
+        {% endfor %}
+
         {% component 'numbered-navigation', {
           children: meta.siblings,
           currentSlug: slug

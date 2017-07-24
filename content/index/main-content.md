@@ -5,6 +5,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Acne](/conditions/acne)
 * [Bacterial vaginosis](/conditions/bacterial-vaginosis)
 * [Blisters](/conditions/blisters)
 * [Broken or bruised ribs](/conditions/broken-or-bruised-ribs)
