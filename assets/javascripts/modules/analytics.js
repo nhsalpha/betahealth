@@ -138,6 +138,10 @@ Analytics.prototype._getEventData = function _getEventData(e) {
       name = `${this.wtPrefix}ExternalLinks`;
       value = $el.attr('href');
       break;
+    case 'finders':
+      name = `${this.wtPrefix}Finders`;
+      value = $el.attr('href');
+      break;
     case 'event':
       name = `${this.wtPrefix}Event`;
       value = $el.prop('tagName');
